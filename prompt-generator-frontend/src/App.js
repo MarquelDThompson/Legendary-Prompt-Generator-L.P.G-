@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
 import logo from './assets/images/logo.png'; 
+import background from './assets/images/background2.png';
 
 function App() {
   const [subject, setSubject] = useState('');
@@ -19,10 +20,10 @@ function App() {
 
   return (
     <div className="App">
-       <div className="App-header"> 
+       <div className="App-header" style={{ backgroundImage: `url(${background})` }}> 
         <img src={logo} alt="Legendary Prompt Generator Logo" className="App-logo" />
       </div>
-      <form onSubmit={handleSubmit}>
+      <form className="form-container" onSubmit={handleSubmit}>
         <label>
           Subject:
           <input 
@@ -32,8 +33,6 @@ function App() {
           />
         </label>
        <button className="custom-btn">Generate Prompt</button>
-
-
       </form>
       {prompt && <p>{prompt}</p>}
     </div>
@@ -41,3 +40,4 @@ function App() {
 }
 
 export default App;
+

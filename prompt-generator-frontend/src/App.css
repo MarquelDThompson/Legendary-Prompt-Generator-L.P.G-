@@ -18,6 +18,7 @@
   transition: background-color 0.3s;
   border-radius: 4px;
   font-family: 'Source Code Pro';
+  margin-left: 15px;
 }
 
 .custom-btn:hover {
@@ -54,7 +55,10 @@
 
 
 .App-header {
-  background-color: #000000;
+  background-image: url('./assets/images/background2.png'); /* Replace 'your_resized_image.png' with your image's name */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -63,6 +67,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.form-container {
+  margin-top: 30px; /* Adjust this value to your liking */
+  margin-bottom: 30px; /* Adjust this value to your liking */
+}
+
+
 body {
   font-family: 'Source Code Pro', sans-serif;
 }
