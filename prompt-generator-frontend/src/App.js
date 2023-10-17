@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './App.css';
+import logo from './assets/images/logo.png'; 
 
 function App() {
   const [subject, setSubject] = useState('');
@@ -17,6 +19,9 @@ function App() {
 
   return (
     <div className="App">
+       <div className="App-header"> 
+        <img src={logo} alt="Legendary Prompt Generator Logo" className="App-logo" />
+      </div>
       <form onSubmit={handleSubmit}>
         <label>
           Subject:
@@ -26,7 +31,9 @@ function App() {
             onChange={(e) => setSubject(e.target.value)}
           />
         </label>
-        <button type="submit">Generate Prompt</button>
+       <button className="custom-btn">Generate Prompt</button>
+
+
       </form>
       {prompt && <p>{prompt}</p>}
     </div>
