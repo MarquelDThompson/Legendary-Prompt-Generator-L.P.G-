@@ -68,4 +68,75 @@ public class ArtPromptGeneratorTest {
                 "Prompt should contain segment indicating a style");
     }
 
+
+    // This checks if the prompt contains an adjective/detail.
+    @Test
+    public void testPromptContainsAdjectiveOrDetail() {
+        String prompt = generator.generatePrompt("Dragon");
+        boolean containsAdjective = false;
+        for (String adjective : ArtPromptGenerator.adjectivesAndDetails) {
+            if (prompt.contains(adjective)) {
+                containsAdjective = true;
+                break;
+            }
+        }
+        assertTrue(containsAdjective, "Prompt should contain at least one adjective or detail.");
+    }
+
+    // This checks if the prompt contains a background.
+    @Test
+    public void testPromptContainsBackground() {
+        String prompt = generator.generatePrompt("Dragon");
+        boolean containsBackground = false;
+        for (String background : ArtPromptGenerator.backgrounds) {
+            if (prompt.contains(background)) {
+                containsBackground = true;
+                break;
+            }
+        }
+        assertTrue(containsBackground, "Prompt should contain a background.");
+    }
+
+    // This checks if the prompt contains an art style.
+    @Test
+    public void testPromptContainsArtStyle() {
+        String prompt = generator.generatePrompt("Dragon");
+        boolean containsArtStyle = false;
+        for (String style : ArtPromptGenerator.artStyles) {
+            if (prompt.contains(style)) {
+                containsArtStyle = true;
+                break;
+            }
+        }
+        assertTrue(containsArtStyle, "Prompt should contain an art style.");
+    }
+
+    // This checks if the prompt contains an enhancer.
+    @Test
+    public void testPromptContainsEnhancer() {
+        String prompt = generator.generatePrompt("Dragon");
+        boolean containsEnhancer = false;
+        for (String enhancer : ArtPromptGenerator.enhancers) {
+            if (prompt.contains(enhancer)) {
+                containsEnhancer = true;
+                break;
+            }
+        }
+        assertTrue(containsEnhancer, "Prompt should contain an enhancer.");
+    }
+
+    // This checks if the prompt mentions an artist.
+    @Test
+    public void testPromptContainsArtist() {
+        String prompt = generator.generatePrompt("Dragon");
+        boolean containsArtist = false;
+        for (String artist : ArtPromptGenerator.artists) {
+            if (prompt.contains(artist)) {
+                containsArtist = true;
+                break;
+            }
+        }
+        assertTrue(containsArtist, "Prompt should mention an artist.");
+    }
+
 }

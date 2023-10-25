@@ -94,7 +94,7 @@ public class ArtPromptGenerator {
                 String artist = artists[random.nextInt(artists.length)];
 
                 return String.format(
-                                "Create a dynamic detailed digital illustration featuring %s that is %s, set in %s, with a %s style, %s, in the art style of %s.",
+                                "Create a dynamic detailed digital illustration featuring %s that is %s, set in %s, with a %s art style, %s, painted by %s.",
                                 mainSubject, adjectiveAndDetail, background, artStyle, enhancer, artist);
         }
 
