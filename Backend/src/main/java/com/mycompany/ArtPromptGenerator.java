@@ -5,17 +5,16 @@ import java.util.Scanner;
 
 public class ArtPromptGenerator {
 
-        private static final String[] adjectivesAndDetails = {
+        protected static final String[] adjectivesAndDetails = {
                         "cute", "attractive", "unattractive", "tall", "short", "fat", "skinny", "muscular", "slim",
                         "large", "small", "big",
                         "bright", "dark", "colorful", "plain", "glamorous", "drab", "elegant", "frumpy", "stylish",
                         "tasteful", "gaudy",
                         "fancy", "simple", "ornate", "sophisticated", "refined", "cluttered", "minimalist", "busy",
-                        "chaotic", "orderly",
-                        // ... and so on
+                        "chaotic", "orderly"
         };
 
-        private static final String[] backgrounds = {
+        protected static final String[] backgrounds = {
                         "a bustling city street", "a peaceful meadow", "a snowy mountain landscape", "a dense forest",
                         "a sandy beach", "a futuristic city skyline", "a desert oasis", "a turbulent ocean",
                         "a colorful sunset", "a spooky graveyard", "a tranquil lake", "a surreal dreamscape",
@@ -27,9 +26,7 @@ public class ArtPromptGenerator {
                         "a mystical portal"
         };
 
-        // add on to this string array with more art styles that are not already
-        // included in the array
-        private static final String[] artStyles = {
+        protected static final String[] artStyles = {
                         "Realism", "Impressionism", "Expressionism", "Cubism", "Surrealism", "Abstract", "Pop Art",
                         "Fauvism",
                         "Art Nouveau", "Dada", "Minimalism", "Conceptual Art", "Post-Impressionism", "Renaissance",
@@ -37,10 +34,10 @@ public class ArtPromptGenerator {
                         "Romanticism", "Neoclassicism", "Mannerism", "Ukiyo-e", "Surrealism", "Futurism", "Dada",
                         "Suprematism",
                         "Constructivism", "De Stijl", "Art Deco", "Bauhaus", "Cubism", "Fauvism", "Expressionism",
-                        "Art Nouveau",
+                        "Art Nouveau"
         };
 
-        private static final String[] enhancers = {
+        protected static final String[] enhancers = {
                         "8k", "HD", "cinematography", "photorealistic", "epic composition", "Unreal Engine",
                         "Cinematic", "Color Grading", "portrait Photography", "Ultra-Wide Angle", "Depth of Field",
                         "hyper-detailed", "beautifully color-coded", "insane details", "intricate details",
@@ -55,33 +52,22 @@ public class ArtPromptGenerator {
                         "Ray Tracing Global Illumination", "Optics", "Scattering", "Glowing"
         };
 
-        private static final String[] artists = {
+        protected static final String[] artists = {
                         "Yoshitaka Amano", "Ancient Chinese Painting", "Will Murai", "Bayard Wu", "James Jean",
                         "J.C. Leyendecker", "Dean Cornwell", "Frank Frazetta", "Ilya Repin", "William Waterhouse",
                         "Howard Pyle", "Alex Ross",
-
-                        // Classical Artists
                         "Leonardo da Vinci", "Vincent van Gogh", "Michelangelo", "Rembrandt", "Claude Monet",
                         "Peter Paul Rubens", "Jan van Eyck", "Titian", "Caravaggio", "Diego Velázquez",
-
-                        // Modern and Famous Artists
                         "Pablo Picasso", "Jackson Pollock", "Andy Warhol", "Frida Kahlo", "Salvador Dalí",
                         "Georgia O'Keeffe", "Jean-Michel Basquiat", "Norman Rockwell", "Banksy", "Keith Haring",
-
-                        // Anime/Manga Artists
                         "Osamu Tezuka", "Hayao Miyazaki", "Akira Toriyama", "Masashi Kishimoto", "Eiichiro Oda",
                         "Hirohiko Araki", "Tite Kubo", "Sui Ishida", "Makoto Shinkai", "Junji Ito",
-
-                        // Comic Artists
                         "Stan Lee", "Jack Kirby", "Steve Ditko", "Todd McFarlane", "Frank Miller",
                         "Jim Lee", "Neal Adams", "Brian Bolland", "Mike Mignola", "Alan Moore",
-
-                        // give me more artists
                         "Frak Franzetta", "J.C. Leyendecker", "Dean Cornwell", "Frank Frazetta", "Ilya Repin",
                         "William Waterhouse",
                         "Howard Pyle", "Alex Ross", "Leonardo da Vinci", "Vincent van Gogh", "Michelangelo",
                         "Rembrandt", "Claude Monet"
-
         };
 
         public String generatePrompt(String mainSubject) {
