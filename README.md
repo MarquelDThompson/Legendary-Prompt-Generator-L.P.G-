@@ -21,8 +21,15 @@ Screen Shot of the User Interface
 After the user inputs a subject and they hit the Generate Button, the prompt is generated below
 <img width="1440" alt="Screen Shot 2023-11-15 at 12 28 07 PM" src="https://github.com/MarquelDThompson/Legendary-Prompt-Generator-L.P.G-/assets/116209354/4d359580-b750-4ca0-977d-c752a573c53a">
 
-Here is the image that was generated in Midjourney using the Prompt from LPG 
+Here is Version 1 of the image that was generated in Midjourney using the Prompt from LPG 
 <img width="1440" alt="Screen Shot 2023-11-15 at 12 38 07 PM" src="https://github.com/MarquelDThompson/Legendary-Prompt-Generator-L.P.G-/assets/116209354/611b6f68-5ea6-45a8-af15-8c9e7d993e05">
 
 Image Zoomed in 
 <img width="1440" alt="Screen Shot 2023-11-15 at 12 35 35 PM" src="https://github.com/MarquelDThompson/Legendary-Prompt-Generator-L.P.G-/assets/116209354/8df7b87f-b8a2-48a5-9134-4c0af7d299b0">
+
+Version 2 using the same prompt 
+<img width="1440" alt="Screen Shot 2023-11-15 at 12 46 07 PM" src="https://github.com/MarquelDThompson/Legendary-Prompt-Generator-L.P.G-/assets/116209354/fc72ce72-b12d-4014-8ace-b89d2113f5cf">
+
+Version 2 Zoomed in 
+<img width="1440" alt="Screen Shot 2023-11-15 at 12 46 18 PM" src="https://github.com/MarquelDThompson/Legendary-Prompt-Generator-L.P.G-/assets/116209354/7cf16903-0ed1-4f4b-b27f-76d570353cfb">
+
